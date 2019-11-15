@@ -11,9 +11,6 @@ fileName = '/rgbobj.bmp'
 
 img = matplotlib.pyplot.imread("/content/drive/My Drive/datafont"+fileName, format=None)
 
-
-
-
 fig, ax = plt.subplots()
 im = ax.imshow(img)
 ax.axis('off')
@@ -25,10 +22,6 @@ plt.show()
 imgRed = np.zeros((M,N), dtype=np.uint8)
 imgGreen = np.zeros((M,N), dtype=np.uint8)
 imgBlue = np.zeros((M,N), dtype=np.uint8)
-
-
-
-
 
 for i in range(M):
   for j in range(N):
@@ -48,7 +41,6 @@ plt.subplot(1, 3, 2)
 plt.imshow(imgGreen,cmap=cm.gray)
 plt.subplot(1, 3, 3)
 plt.imshow(imgBlue,cmap=cm.gray)
-
 
 
 X1 = np.arange(0, M, 1)
